@@ -90,7 +90,7 @@ export default function Home() {
 
     <section className="section technical"><Reveal><div className="section-kicker">07 / TECHNICAL FOCUS</div></Reveal><Reveal delay={.06}><h2>What I work<br/>with.</h2></Reveal>
       <div className="tech-grid">{[
-        ["BACKEND","Node.js · NestJS · Spring Boot · REST APIs · Microservices · RabbitMQ"],
+        ["BACKEND","Node.js · NestJS · Spring Boot · REST APIs · Microservices · RabbitMQ · GO"],
         ["SYSTEMS","Distributed Systems · System Design · Authorization & Access Control · API Design"],
         ["CLOUD & INFRA","AWS · Docker · Kubernetes · Lambda · SQS · CloudWatch · CI/CD · PagerDuty"],
         ["DATA","Snowflake · DynamoDB · MongoDB · PostgreSQL · MySQL · Redis"],
