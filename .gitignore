@@ -1,0 +1,13 @@
+/.env
+/node_modules
+/dist
+/build
+/public
+/src
+/test
+/tmp
+/vendor
+/www
+/yarn.lock
+/package-lock.json
+/package.json
