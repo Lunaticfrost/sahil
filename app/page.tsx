@@ -101,7 +101,7 @@ export default function Home() {
 
     <section id="about" className="section notes"><Reveal><div className="section-kicker">08 / ELSEWHERE</div></Reveal>
       <div className="notes-flex"><div><h2>Build. Operate.<br/>Understand. Repeat.</h2><p className="about-line">Software engineer based in Bengaluru, focused on backend systems and production reliability.</p></div>
-      <div className="contact"><a href="https://github.com/Lunaticfrost" target="_blank">GITHUB <ArrowUpRight size={15}/></a><a href="https://www.linkedin.com/in/sahildhatterwal/" target="_blank">LINKEDIN <ArrowUpRight size={15}/></a><a href="mailto:sahilfrost@gmail.com">EMAIL <ArrowUpRight size={15}/></a><a href="/Sahil.pdf" target="_blank"><FileText size={14}/> RÉSUMÉ <ArrowUpRight size={15}/></a></div></div>
+      <div className="contact"><a href="https://github.com/Lunaticfrost" target="_blank">GITHUB <ArrowUpRight size={15}/></a><a href="https://www.linkedin.com/in/sahildhatterwal/" target="_blank">LINKEDIN <ArrowUpRight size={15}/></a><a href="mailto:sahilfrost@gmail.com">EMAIL <ArrowUpRight size={15}/></a><a href="https://drive.google.com/file/d/1aTirOEirDBlxZWyCMXnt9EdlCCf9Ipbp/view?usp=sharing" target="_blank"><FileText size={14}/> RÉSUMÉ <ArrowUpRight size={15}/></a></div></div>
       <footer>© 2026 SAHIL — SOFTWARE ENGINEER / BENGALURU, INDIA</footer>
     </section>
   </main>;
