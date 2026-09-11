@@ -18,8 +18,8 @@ export function Reveal({ children, delay = 0 }: { children: React.ReactNode; del
 }
 
 export function MagneticLink({
-  href, children, className = ""
-}: { href: string; children: React.ReactNode; className?: string }) {
+  href, children, className = "", target, rel
+}: { href: string; children: React.ReactNode; className?: string; target?: string; rel?: string }) {
   const x = useMotionValue(0), y = useMotionValue(0);
   const sx = useSpring(x, { stiffness: 280, damping: 20 });
   const sy = useSpring(y, { stiffness: 280, damping: 20 });
@@ -34,7 +34,16 @@ export function MagneticLink({
   function leave() { x.set(0); y.set(0); }
 
   return (
-    <motion.a ref={ref} href={href} style={{ x: sx, y: sy }} onMouseMove={move} onMouseLeave={leave} className={`arrow-link ${className}`}>
+    <motion.a
+      ref={ref}
+      href={href}
+      target={target}
+      rel={target === "_blank" ? (rel ?? "noreferrer noopener") : rel}
+      style={{ x: sx, y: sy }}
+      onMouseMove={move}
+      onMouseLeave={leave}
+      className={`arrow-link ${className}`}
+    >
       {children}
     </motion.a>
   );
