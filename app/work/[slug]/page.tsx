@@ -4,7 +4,7 @@ const data: Record<string, { section: string; title: string; intro: string; prob
   reliability: {
     section: "06 / RELIABILITY",
     title: "Make failure a designed state.",
-    intro: "A reliability problem is rarely solved by adding one more retry. The useful work is understanding where failure lives — then giving the system a deliberate response.",
+    intro: "A reliability problem is rarely solved by adding one more retry. The useful work is understanding where failure lives: then giving the system a deliberate response.",
     problem: "Unclear failure boundaries made incidents harder to diagnose and recovery too dependent on human intervention.",
     decision: "Separate synchronous request handling from asynchronous recovery, with explicit retry boundaries and observable state.",
     outcome: "Failures become bounded events instead of mysterious incidents."
@@ -14,7 +14,7 @@ const data: Record<string, { section: string; title: string; intro: string; prob
     title: "Build the boring path beautifully.",
     intro: "The backend should make the happy path obvious and the unhappy path explainable. That means fewer clever abstractions and more explicit ownership of state.",
     problem: "Multiple services owned pieces of the same data flow, creating ambiguity around ordering, retries, and responsibility.",
-    decision: "Make state transitions explicit and let each stage own one job — validate, enqueue, process, persist.",
+    decision: "Make state transitions explicit and let each stage own one job: validate, enqueue, process, persist.",
     outcome: "The system becomes easier to reason about, test, and operate."
   },
   operations: {
